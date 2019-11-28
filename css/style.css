@@ -376,5 +376,30 @@ footer h6{
     font-size: .8em;
 }
 @media screen and (max-width: 426px){
-    
+    .hero-bg{
+        background-size: cover;
+    }
+    .nav-bar > ul > li > a{
+        margin: 0 .2em 0 .2em;
+    }
+    .nav-bar > ul{
+        justify-content: center;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .left-side{
+        grid-row: 2/3;
+    }
+    .main-area > p{
+        padding: .5em;
+    }
+    .main-title > h1{
+        text-align: center;
+    }
+    .card-content > p{
+        padding: 1.5em;
+    }
 }
