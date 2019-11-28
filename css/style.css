@@ -381,6 +381,7 @@ footer h6{
     }
     .nav-bar > ul > li > a{
         margin: 0 .2em 0 .2em;
+        font-size: .6em;
     }
     .nav-bar > ul{
         justify-content: center;
