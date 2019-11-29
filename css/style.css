@@ -48,6 +48,11 @@ span{
     color: #fff;
     font-size: .7em;
 }
+.subscribe{
+    margin-right: 50vw;
+    font-weight: bolder;
+    border: .5px solid #ccc;
+}
 
 /* HERO */
 
@@ -476,5 +481,10 @@ textarea[name="message"]{
     }
     .card img{
         width: 100vw;
+    }
+    .subscribe{
+        position: absolute;
+        top: 10vh;
+        background: rgba(0, 0, 0, 0.644);
     }
 }
