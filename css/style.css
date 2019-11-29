@@ -69,7 +69,7 @@ span{
     background: url('../img/left-wall.jpg') no-repeat center;
     height: 50vh;
     width: 50.7%;
-    background-size: contain;
+    background-size: cover;
     padding: 0 15px 0 15px;
     border-left: 5px solid #444;
     border-right: 5px solid #444;
@@ -404,6 +404,10 @@ footer h6{
     }
     .left-side{
         grid-row: 2/3;
+        border: none;
+    }
+    .right-side{
+        border: none;
     }
     .main-area > p{
         padding: .5em;
@@ -414,12 +418,17 @@ footer h6{
     .card-content > p{
         padding: 1.5em;
     }
-    #me-excited{
-    }
+    
     .try{
         /* background: rgba(37, 34, 34, 0.438); */
         flex-direction: column;
         color:rgb(10, 9, 9);
         text-decoration: underline;
+    }
+    .card{
+        margin-bottom: 1em;
+    }
+    .card img{
+        width: 100vw;
     }
 }
