@@ -534,6 +534,14 @@ textarea[name="message"]{
 .method li{
     line-height: 2em;
 }
+email{
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+    /* text-align: center; */
+    
+}
 @media screen and (max-width: 426px){
     .hero-bg{
         background-size: cover;
@@ -628,6 +636,9 @@ textarea[name="message"]{
     .grid-item-right{
         border: 1px solid rgb(54, 46, 46);
 
+    }
+    email{
+        font-size: .6em;
     }
 }
 @media screen and (max-width: 321px){
