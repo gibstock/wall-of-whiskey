@@ -155,6 +155,10 @@ span{
 }
 .item10{
     grid-area: 5/4/span 2/ span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .item11{
     grid-area: 5/6/span 2/ span 2;
@@ -190,10 +194,13 @@ span{
     align-items: flex-end;
 
 }
-.item19 > a >img{
+.item10 > a > img,
+.item19 > a > img{
     width: 1.5em;
+    height: 100%;
 }
-.item19 > a >img:hover{
+.item10 > a > img:hover,
+.item19 > a > img:hover{
     cursor: pointer;
     transform: scale(5);
     transform-origin: center;
@@ -611,6 +618,10 @@ email{
     }
     .card-content > p{
         padding: 1.5em;
+    }
+    .card-content > p > img{
+        width: 10vw;
+        
     }
     
     .try{
