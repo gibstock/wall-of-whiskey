@@ -1,0 +1,79 @@
+/* *,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* body{
+    font-family: "Cinzel";
+} */
+/* .main-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.main-card{
+    /* width: 80vw; */
+    /* background: #aaa; */
+    /* padding: 1em; */
+}
+.title-wrap{
+    /* display: grid; */
+    /* grid-template-columns: 7fr 1fr 1fr; */
+    /* background: #777; */
+}
+.title-wrap a img{
+    /* width: 50%; */
+}
+.title{
+    /* justify-self: center; */
+    /* align-self: center; */
+}
+.title > h3{
+    /* color: #fff; */
+    /* font-weight: bold; */
+    /* font-size: 1.9em; */
+}
+.hero{
+    /* background: url('../img/left-wall.jpg'); */
+    /* background-size: cover; */
+    /* height: 25vh; */
+    /* filter: sepia(10); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    
+}
+.hero > h1{
+    /* backdrop-filter: brightness(20); */
+    /* font-weight: 900; */
+}
+.hero > p{
+    /* backdrop-filter: blur(10px) brightness(3); */
+}
+.btn{
+    /* border-radius: 10px 0 10px 0; */
+    /* border: none; */
+    /* padding: 5px; */
+    /* box-shadow: inset 0 0px 5px 3px rgba(0, 0, 0, 0.74); */
+}
+/* .btn:hover{
+    cursor: pointer;
+} */
+.text-area{
+    /* margin-top: 1.5em; */
+    /* background: #777;
+    padding: 1em; */
+}
+/* .text-area > h3{
+    text-align: center;
+} */
+/* .text-area > p{
+    color: #fff;
+} */
+/* .text-area > img{
+    width: 2em;
+} */
+/* .text-area > p > a{
+    color: #000;
+} */
