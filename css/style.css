@@ -542,6 +542,31 @@ email{
     /* text-align: center; */
     
 }
+.tags{
+    
+    font-size: .4em;
+}
+.tags ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+
+}
+.tags ul li{
+    list-style: none;
+    margin: 0 0 1.5em 1em;
+
+}
+.tags ul li a{
+    color: #111;
+}
+#cocktail-display{
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+}
 @media screen and (max-width: 426px){
     .hero-bg{
         background-size: cover;
@@ -639,6 +664,10 @@ email{
     }
     email{
         font-size: .6em;
+    }
+    #cocktail-display{
+        width: 100%;
+        box-shadow: none;
     }
 }
 @media screen and (max-width: 321px){
