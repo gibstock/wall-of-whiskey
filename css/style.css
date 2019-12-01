@@ -296,6 +296,7 @@ span{
 .welcome > p,
 .bar-choice > p,
 .latest-post > p,
+.older-posts > p,
 .main-area > p{
     font-family: 'Roboto', serif;
     padding: 1em 0 1em 0;
@@ -305,12 +306,14 @@ span{
 }
 .welcome > h2,
 .latest-post > h2,
+.older-posts > h2,
 .main-area > h2{
     text-align: center;
     margin-bottom: 1em;
 }
 .welcome > img,
 .latest-post > img,
+.older-posts > img,
 .main-area > img{
     width: 30%;
     float: left;
@@ -319,15 +322,18 @@ span{
 }
 .welcome > date, author,
 .latest-post > date,author,
+.older-posts > date,author,
 .main-area > date,author{
     font-size: 16px;
 }
-
+.older-posts,
 .latest-post{
     border-top: 1px dashed lightgray;
     /* border-bottom: 3px solid lightgray; */
     box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.541);
 }
+.older-posts,
+.latest-post,
 .welcome,
 .bar-choice{
     margin: 1em 0 1em 0;
