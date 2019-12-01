@@ -17,16 +17,16 @@
     /* padding: 1em; */
 }
 .title-wrap{
-    /* display: grid; */
-    /* grid-template-columns: 7fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr;
     /* background: #777; */
 }
 .title-wrap a img{
-    /* width: 50%; */
+    width: 50%;
 }
 .title{
-    /* justify-self: center; */
-    /* align-self: center; */
+    justify-self: center;
+    align-self: center;
 }
 .title > h3{
     /* color: #fff; */
