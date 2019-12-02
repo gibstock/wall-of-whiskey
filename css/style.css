@@ -590,6 +590,10 @@ email{
     display: flex;
     justify-content: right;
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     bottom: 50%; 
 }
 .share{
