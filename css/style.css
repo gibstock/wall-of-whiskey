@@ -91,6 +91,7 @@ span{
     backdrop-filter: blur(5px);
     font-size: 1.9em;
     z-index: 98;
+    display: none;
     
 }
 /* WHISKEY WALL  */
@@ -616,9 +617,48 @@ email{
         /* background: rgba(0, 0, 0, 0.644); */
     }
 }
+@media screen and (max-width: 1024px){
+    .hero-bg{
+        background: url('../img/mobile-banner.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding:0;
+        
+    }
+    .wall-left{
+        width: 100vw;
+    }
+    .wall-right{
+        width: 100vw;
+    }
+}
+@media screen and (max-width: 884px){
+    .hero-bg{
+        background: url('../img/mobile-banner.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding:0;
+        
+    }
+    .wall-left{
+        width: 75%;
+    }
+    .wall-right{
+        width: 75%;
+    }
+
+}
 @media screen and (max-width: 515px){
     .hero-bg{
+        background: url('../img/mobile-banner.jpg') no-repeat;
         background-size: cover;
+        background-position: top;
+    }
+    .wall-left{
+        width: 25%;
+    }
+    .wall-right{
+        width: 25%;
     }
     .nav-bar > ul > li > a{
         margin: 0 .2em 0 .2em;
