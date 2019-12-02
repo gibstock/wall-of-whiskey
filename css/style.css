@@ -586,7 +586,33 @@ email{
 .medium{
     font-size: .6em;
 }
-@media screen and (max-width: 426px){
+.share-wrap{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    bottom: 50%; 
+}
+.share{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+     
+}
+.share a img{
+    width: 1em;
+    
+}
+@media screen and (max-width: 1300px){
+    .subscribe{
+        position: absolute;
+        top: 3.4vh;
+        border: none;
+        /* background: rgba(0, 0, 0, 0.644); */
+    }
+}
+@media screen and (max-width: 515px){
     .hero-bg{
         background-size: cover;
     }
