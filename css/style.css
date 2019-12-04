@@ -15,6 +15,9 @@ sup{
 span{
     font-weight: bolder;
 }
+i{
+    font-size: .6em;
+}
 
 /* NAVBAR */
 
@@ -240,6 +243,11 @@ span{
 .main-title > h1{
     font-size: 2.5em;
     font-weight: bolder;
+}
+.main-title p a{
+    text-decoration: none;
+    color: #333;
+    font-size: .8em;
 }
 /* section A  */
 
