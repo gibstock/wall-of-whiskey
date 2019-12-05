@@ -783,6 +783,12 @@ email{
         width: 100%;
         box-shadow: none;
     }
+    .latest-post p img{
+        width: 100%;
+    }
+    .latest-post h1{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 321px){
     .nav-bar > ul > li > a{
