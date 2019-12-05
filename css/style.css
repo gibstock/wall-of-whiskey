@@ -201,11 +201,13 @@ i{
     align-items: flex-end;
 
 }
+.item5 > a > img,
 .item10 > a > img,
 .item19 > a > img{
     width: 1.5em;
     height: 100%;
 }
+.item5 > a > img:hover,
 .item10 > a > img:hover,
 .item19 > a > img:hover{
     cursor: pointer;
@@ -397,6 +399,9 @@ i{
     color: #222;
 
 
+}
+.card-content p a{
+    color: #000;
 }
 .card-content > img{
     width: 100%;
@@ -615,6 +620,11 @@ email{
     align-items: flex-end;
     width: 100%;
      
+}
+.share::before{
+    content: "Share";
+    font-size: .4em;
+
 }
 .share a img{
     width: 1em;
