@@ -787,7 +787,7 @@ email{
         width: 100%;
         box-shadow: none;
     }
-    .latest-post p img{
+    .latest-post p a img{
         width: 100%;
     }
     .latest-post h1{
