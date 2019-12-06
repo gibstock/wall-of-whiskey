@@ -681,6 +681,10 @@ email{
     .wall-right{
         width: 25%;
     }
+    .section-grid{
+        display: flex;
+        flex-direction: column;
+    }
     .nav-bar > ul > li > a{
         margin: 0 .2em 0 .2em;
         font-size: .6em;
