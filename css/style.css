@@ -33,6 +33,30 @@ i{
     top: 0;
     z-index: 99;
 }
+/* .working::before{
+    content: "Sometimes in the bar world, if we run out of a product or it isn't in yet, it's 86'd. Well this is 86'd! Check back soon. In the meantime, please make another selection. Cheers.";
+    background: #fff;
+    position: absolute;
+    top: 10vh;
+    width: 50vw;
+    border-radius: 20px;
+    padding: 1.5em;
+    box-shadow: inset 0 0 5px 5px indigo, inset 0 0 10px 10px rgb(70, 90, 201), inset 0 0 20px 20px rgba(0, 0, 0, 0.884);
+    visibility: visible;
+} */
+/* .working:hover .working::before{
+    visibility: visible;
+} */
+/* .nav-bar::after{
+    content: "close";
+    position: absolute;
+    top: 2vh;
+    left: 47%;
+    color: red;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+} */
 .nav-bar > ul{
     width: 100%;
     display: flex;
@@ -543,6 +567,60 @@ textarea[name="message"]{
     box-shadow: 0 8px 8px 3px rgba(0, 0, 0, 0.432);
 
 }
+.bar-tools-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.bar-tools-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.bar-tools-card p{
+    font-size: .8em;
+    font-family: 'Roboto';
+    padding: 0 1em 0 1em;
+}
+.bar-tools-card a img{
+    width: 100%;
+}
+.relative{
+    position: relative;
+}
+/* MODALS  */
+.modal-Info{
+    background: #eef;
+    color: #000;
+    opacity: .9;
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #efe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    z-index: 97;
+}
+.modal-Info p{
+    margin-bottom: .5em;
+}
+.info-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.info-wrap:hover .modal-Info{
+    visibility: visible;
+}
+
+
 .recipe-grid{
     display: grid;
     margin-top: 1.4em;
@@ -612,6 +690,7 @@ email{
     position: -ms-sticky;
     position: -o-sticky;
     bottom: 50%; 
+    z-index: 98;
 }
 .share{
     display: flex;
@@ -629,6 +708,30 @@ email{
 .share a img{
     width: 1em;
     
+}
+.bar-menu:hover .bar-sub-menu{
+    display: flex;
+    flex-direction: column;
+}
+.bar-sub-menu{
+    position: absolute;
+    Background: #444;
+    display: none;
+    
+}
+.bar-sub-menu li{
+    list-style: none;
+    padding: 0 .5em 0 .5em;
+}
+.bar-sub-menu li:focus,
+.bar-sub-menu li:hover{
+    background: #aaa;
+}
+.bar-sub-menu li a{
+    font-size: .6em;
+    color: #fff;
+    text-decoration: none;
+
 }
 @media screen and (max-width: 1300px){
     .subscribe{
@@ -670,6 +773,35 @@ email{
 
 }
 @media screen and (max-width: 515px){
+    .bar-tools-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .bar-tools-card{
+        margin: 0 ;
+    }
+    /* #shaker{
+        margin-top: 8vh;
+    } */
+    .info-wrap{
+        position: relative;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    .modal-Info{
+        position: relative;
+        visibility: visible;
+        background: #fff;
+    }
+    .modal-Info p{
+        margin-bottom: 1em;
+    }
+    .modal-Info h1{
+        margin: 1em 0 1em 0;
+    }
+    .mobile-hidden{
+        display: none;
+    }
     .hero-bg{
         background: url('../img/mobile-banner.jpg') no-repeat;
         background-size: cover;
@@ -793,6 +925,22 @@ email{
     .latest-post h1{
         text-align: center;
     }
+    .bar-sub-menu{
+        top: -25vh;
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bar-menu:hover .bar-sub-menu,
+    .bar-menu:focus .bar-sub-menu,
+    .bar-menu:active .bar-sub-menu{
+        transition: transform 2s;
+        transform: translateY(32.9vh);
+        width: 100%;
+    }
+    
+    
 }
 @media screen and (max-width: 321px){
     .nav-bar > ul > li > a{

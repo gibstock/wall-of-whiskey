@@ -5,6 +5,8 @@ const leftSide = document.querySelector('.left-side');
 const rightSide = document.querySelector('.right-side');
 const ul = leftSide.querySelector('ul');
 const ulRight = rightSide.querySelector('ul');
+// const nav = document.querySelector('.nav-bar');
+
 
 
 function displayWhiskey(arr){
@@ -30,7 +32,16 @@ function displayCocktails(arr){
         ulRight.appendChild(li);
     }
 }
+
+function working(){
+    alert( "Sometimes in the bar world, if we run out of a product or it isn't in yet, it's 86'd. Well this is 86'd! Check back soon. In the meantime, please make another selection. Cheers.")
+    // window.getComputedStyle(nav, ':before').setProperty('visibility', 'visible');
+    // window.getComputedStyle(nav, ':after').setProperty('visibility', 'visible');
+    // console.log(window.getComputedStyle(nav, ':before').getPropertyValue('visibility'));
+    
+}
 // x =Math.floor((Math.random() * cocktailList.length));
+
 
 displayCocktails(cocktailList);
 displayWhiskey(whiskeyList);
