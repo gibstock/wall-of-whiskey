@@ -867,6 +867,7 @@ email{
         position: absolute;
         top: 3.4vh;
         border: none;
+        margin: 0;
         /* background: rgba(0, 0, 0, 0.644); */
     }
     .recipe-grid{
@@ -893,6 +894,7 @@ email{
         margin-top: 1em;
     }
     .cocktail-card{
+        width: 100%;
         flex-direction: column;
     }
     .cocktail-card p{
@@ -900,6 +902,9 @@ email{
         text-align: center;
         /* padding: 1em; */
         margin-top: 1em;
+    }
+    .cocktail-card a img{
+        width: 100%;
     }
     .left-side > img{
         width: 30%;
@@ -931,6 +936,9 @@ email{
         left: 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
     }
     .bar-menu:hover .bar-sub-menu,
     .bar-menu:focus .bar-sub-menu,
@@ -939,6 +947,7 @@ email{
         transform: translateY(32.9vh);
         width: 100%;
     }
+    
     
     
 }
