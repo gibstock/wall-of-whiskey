@@ -1140,6 +1140,12 @@ email{
     
 }
 @media screen and (max-width: 321px){
+    .nav-bar::before{
+        left: 20vw;
+    }
+    .mobile-menu-button{
+        display: none;
+    }
     .hero-bg{
         display: none;
     }
@@ -1148,5 +1154,65 @@ email{
     }
     .wall-right{
         width: 50%;
+    }
+    .mini-menu{
+        /* background: green; */
+        /* height: 50vh; */
+        width: 100%;
+        position: absolute;
+        top: 11vh;
+        z-index: 101;
+    }
+    .mini-menu ul li{
+        /* background: blue; */
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .mini-menu > ul > li > a{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+    }
+    .mini-menu-sub{
+        flex-direction: column;
+        display: none;
+        background: #fff;
+        opacity: .2;
+    }
+    .mini-menu-sub > li{
+        list-style: none;;
+
+    }
+    .mini-menu-sub > li  a{
+        color: #000;
+        text-decoration: none;
+
+    }
+    
+    .iphone-sub-menu{
+        display: none;
+        flex-direction: column;
+    }
+    .iphone-sub-menu > li{
+        background: #000;
+    }
+    .iphone-sub-menu > li > a{
+        color: #fff;
+    }
+    /* .mini-menu > li:hover .mini-menu-sub{
+        display: flex;
+        
+
+    } */
+    .mini-menu ul li:hover .mini-menu-sub{
+        display: flex;
+        opacity: .7;
+        transition-delay: 2s;
+        transition: opacity 2s;
+    }
+    .iphone-bar-menu:hover .iphone-sub-menu{
+        display: flex;
     }
 }
