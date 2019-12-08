@@ -1159,6 +1159,7 @@ email{
         width: 50%;
     }
     .mini-menu{
+        display: inline;
         /* background: green; */
         /* height: 50vh; */
         width: 100%;
