@@ -748,6 +748,9 @@ email{
     text-decoration: none;
 
 }
+.mini-menu{
+    display: none;
+}
 @media screen and (max-width: 1300px){
     .subscribe{
         position: absolute;
