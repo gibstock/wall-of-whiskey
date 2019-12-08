@@ -836,7 +836,7 @@ email{
         content:"WallOfWhiskey.com";
         font-size: .9em;
         position: absolute;
-        left: 5px;
+        right: 5px;
     
 
     }
@@ -851,7 +851,7 @@ email{
         flex-direction: column;
         justify-content: space-between;
         top: 10vh;
-        left: -32.75vh;
+        left: 0;
         height: 50vh;
         width: 100vw;
         background: rgba(255, 255, 255, 0.959);
@@ -875,7 +875,7 @@ email{
         position: absolute;
         z-index: 100;
         top: 7vh;
-        right: 0;
+        left: 0;
         
     }
     .mobile-menu-button:before{
