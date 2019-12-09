@@ -381,10 +381,10 @@ i{
     margin-right: .5em;
     box-shadow: 0 2px 15px 5px black;
 }
-.welcome > date, author,
-.latest-post > date,author,
-.older-posts > date,author,
-.main-area > date,author{
+.welcome > date, author, comment,
+.latest-post > date,author, comment,
+.older-posts > date,author, comment,
+.main-area > date,author, comment{
     font-size: 16px;
 }
 .older-posts,
@@ -400,8 +400,6 @@ i{
     margin: 1em 0 1em 0;
     padding: 0px;
     box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.541);
-    
-
 }
 .bar-choice > h6{
     text-align: center;
@@ -412,6 +410,9 @@ i{
 }
 .bar-choice > ul > li > p{
     font-size: .7em;
+}
+.bar-choice comment{
+    padding: 1em;
 }
 .latest-post p a img{
     width: 40vw;
