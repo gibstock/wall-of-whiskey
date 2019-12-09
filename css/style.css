@@ -359,7 +359,7 @@ i{
 .older-posts > p,
 .main-area > p{
     font-family: 'Roboto', serif;
-    padding: 1em 0 1em 0;
+    padding: 1em 30px 1em 30px;
     line-height: 1.5em;
     text-align: left;
     font-size: .8em;
@@ -368,6 +368,7 @@ i{
 .latest-post > h2,
 .older-posts > h2,
 .main-area > h2{
+    padding: 30px;
     text-align: center;
     margin-bottom: 1em;
 }
@@ -397,7 +398,9 @@ i{
 .welcome,
 .bar-choice{
     margin: 1em 0 1em 0;
+    padding: 0px;
     box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.541);
+    
 
 }
 .bar-choice > h6{
@@ -410,7 +413,9 @@ i{
 .bar-choice > ul > li > p{
     font-size: .7em;
 }
-
+.latest-post p a img{
+    width: 40vw;
+}
         
 .section-grid{
     display: grid;
@@ -767,14 +772,14 @@ email{
         padding:0;
         
     }
-    .wall-left{
+    /* .wall-left{
         width: 100vw;
     }
     .wall-right{
         width: 100vw;
-    }
+    } */
 }
-@media screen and (max-width: 884px){
+@media screen and (max-width: 515px){
     .hero-bg{
         background: url('../img/mobile-banner.jpg') no-repeat;
         background-size: cover;
@@ -790,7 +795,7 @@ email{
     }
 
 }
-@media screen and (max-width: 515px){
+@media screen and (max-width: 768px){
     .bar-tools-grid{
         display: grid;
         grid-template-columns: 1fr;
@@ -1001,6 +1006,25 @@ email{
     .main-area > p{
         padding: .5em;
     }
+    .latest-post h3,
+    .bar-choice h3,
+    .older-posts h3,
+    .welcome h3{
+        padding: 30px;
+        text-align: center;
+    }
+    .latest-post img,
+    .bar-choice img,
+    .older-posts img,
+    .welcome img{
+        margin: 30px;
+    }
+    .welcome > date, author,
+    .latest-post > date,author,
+    .older-posts > date,author,
+    .main-area > date,author{
+    padding-left: 30px;
+}
     .main-title > h1{
         text-align: center;
     }
@@ -1017,6 +1041,10 @@ email{
         flex-direction: column;
         color:rgb(10, 9, 9);
         text-decoration: underline;
+    }
+    .try-all{
+        
+        word-spacing: 5px;
     }
     .card{
         margin-bottom: 1em;
@@ -1079,7 +1107,7 @@ email{
     .cocktail-card p{
         font-size: .7em;
         text-align: center;
-        /* padding: 1em; */
+        padding: 30px;
         margin-top: 1em;
     }
     .cocktail-card a img{
