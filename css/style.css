@@ -736,33 +736,35 @@ email{
     font-size: .6em;
 }
 .share-wrap{
-    display: flex;
-    justify-content: right;
-    position: sticky;
+    /* display: flex; */
+    /* justify-content: right; */
+    position: relative;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     bottom: 0; 
     z-index: 98;
+    /* width: 100vw; */
+    /* height: 100vh; */
 }
 .share{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
      
 }
 .share::before{
-    content: "Share";
+    content: "Like this? Tell your friends!";
     font-size: .5em;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.596);
+    color: #000;
 
 }
 .share a img{
     width: 1em;
+    margin: .5em;
     
 }
 .bar-menu:hover .bar-sub-menu{
@@ -906,7 +908,7 @@ email{
     .nav-bar{
         
         height: 17vh;
-        border-bottom: 1.5em solid black;
+        border-bottom: none;
         background: #fff;
     }
     .nav-bar > .mobile-menu-button > ul{
@@ -964,7 +966,9 @@ email{
         border-top: 14px solid rgba(245, 240, 240, 0.973);
         box-shadow: 0 13px 15px .5px black;
     }
-    .mobile-menu-button:hover::before{
+    .mobile-menu-button:hover::before,
+    .mobile-menu-button:focus::before,
+    .mobile-menu-button:active::before{
         border: none;
         height: 5px;
         top: 0;
@@ -973,7 +977,9 @@ email{
         
 
     }
-    .mobile-menu-button:hover::after{
+    .mobile-menu-button:hover::after,
+    .mobile-menu-button:focus::after,
+    .mobile-menu-button:active::after{
         border: none;
         height: 5px;
         top: 0;
@@ -1015,14 +1021,18 @@ email{
 
 
     }
-    .mobile-menu-button:hover ul{
-        transition: transform 3s, clip-path 4s;
+    .mobile-menu-button:hover ul,
+    .mobile-menu-button:focus ul,
+    .mobile-menu-button:active ul{
+        transition: transform 2s, clip-path 3s;
         transform: scale(1);
         clip-path: circle(425px);
     }
-    .mobile-menu-button:hover ul li a{
-        transition: opacity 3s;
-        transition-delay: 3s;
+    .mobile-menu-button:hover ul li a,
+    .mobile-menu-button:focus ul li a,
+    .mobile-menu-button:active ul li a{
+        transition: opacity 2s;
+        transition-delay: 1s;
         opacity: 1;
     }
     
@@ -1038,9 +1048,11 @@ email{
         opacity: 0;
         /* transform: scale(0); */
     }
-    .mobile-menu-button:hover ul:after{
-        transition: opacity 2s;
-        transition-delay: 2.7s;
+    .mobile-menu-button:hover ul:after,
+    .mobile-menu-button:focus ul:after,
+    .mobile-menu-button:active ul:after{
+        transition: opacity 1s;
+        transition-delay: 1s;
         /* transform: scale(1); */
         opacity: 1;
     }
@@ -1068,12 +1080,7 @@ email{
         padding: 30px;
         text-align: center;
     }
-    .latest-post img,
-    .bar-choice img,
-    .older-posts img,
-    .welcome img{
-        margin: 30px;
-    }
+    
     .welcome > date, author,
     .latest-post > date,author,
     .older-posts > date,author,
@@ -1284,14 +1291,15 @@ email{
         width: 50%;
     }
     .mini-menu{
-        display: inline;
+        display: inherit;
         /* background: green; */
         /* height: 50vh; */
         width: 100%;
-        position: absolute;
-        top: 11vh;
+        position: sticky;
+        top: 0;
         z-index: 101;
     }
+    
     .mini-menu ul li{
         /* background: blue; */
         width: 100%;
@@ -1300,7 +1308,7 @@ email{
     }
     
     .mini-menu > ul > li > a{
-        color: #fff;
+        color: #000;
         text-decoration: none;
         list-style: none;
     }
@@ -1335,13 +1343,17 @@ email{
         
 
     } */
-    .mini-menu ul li:hover .mini-menu-sub{
+    .mini-menu ul li:hover .mini-menu-sub,
+    .mini-menu ul li:focus .mini-menu-sub,
+    .mini-menu ul li:active .mini-menu-sub{
         display: flex;
         opacity: .7;
         transition-delay: 2s;
         transition: opacity 2s;
     }
-    .iphone-bar-menu:hover .iphone-sub-menu{
+    .iphone-bar-menu:hover .iphone-sub-menu,
+    .iphone-bar-menu:focus .iphone-sub-menu,
+    .iphone-bar-menu:active .iphone-sub-menu{
         display: flex;
     }
 }
