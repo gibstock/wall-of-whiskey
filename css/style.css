@@ -646,6 +646,12 @@ textarea[name="message"]{
 .info-wrap:hover .modal-Info{
     visibility: visible;
 }
+.info-wrap:hover .modal-Info:hover{
+    visibility: visible;
+}
+.bar-tools-card > a:hover .modal-Info{
+    visibility: visible;
+}
 
 
 .recipe-grid{
