@@ -804,6 +804,9 @@ email{
 
     
 }
+#disqus-thread{
+    padding: 0 1em 1em 1em;
+}
 @media screen and (max-width: 1300px){
     .subscribe{
         position: absolute;
