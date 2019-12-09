@@ -571,11 +571,15 @@ textarea[name="message"]{
 }
 .cocktail-card{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     
+}.card-wrap a{
+    text-decoration: none;
+    color: #000;
 }
-.cocktail-card a{
+.card-wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -583,8 +587,11 @@ textarea[name="message"]{
     width: 50%;
     
 }
-.cocktail-card a:hover{
-    box-shadow: 0 8px 8px 3px rgba(0, 0, 0, 0.432);
+.card-wrap a p{
+    padding: 30px;
+}
+.card-wrap p:hover{
+    text-decoration: underline;
 
 }
 .bar-tools-grid{
