@@ -1,5 +1,5 @@
 const cocktailList = ['daiquiri','hot-toddy',
-'old-fashioned'];
+'old-fashioned','monte-carlo'];
 const whiskeyList = ['Westland-Sherry-Wood', 'Michters-Toasted-Barrel','Wl-Weller-12-Year'];
 const leftSide = document.querySelector('.left-side');
 const rightSide = document.querySelector('.right-side');
