@@ -1386,6 +1386,16 @@ email{
         font-family: 'Times New Roman', Times, serif;
 
     }
+    .blog-post img{
+        transform: translateX(0%);
+    }
+    .blog-post{
+        padding: 1em; 
+    }
+    .quote{
+        font-size: .6em;
+        margin-bottom: 1em;
+    }
     
     
 }
