@@ -529,13 +529,20 @@ i{
     font-size: 1.6em;
 }
 .drop{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-bottom: 1.5em;
+    /* padding: 1.5em; */
 }
 .drop p{
     font-family: 'Roboto';
     font-size: .7em;
+    padding: 0 1em 0 1em;
     
+}
+.drop h2{
+    margin:1em 0 1em 0;
 }
     
 .buy-mobile{
@@ -952,6 +959,9 @@ email{
 
 } */
 @media screen and (max-width: 768px){
+    .drop p img{
+        max-width: 90%;
+    }
     .bar-tools-grid{
         display: grid;
         grid-template-columns: 1fr;
