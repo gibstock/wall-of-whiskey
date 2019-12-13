@@ -1194,7 +1194,13 @@ email{
     .older-posts > date,author,
     .main-area > date,author{
     padding-left: 30px;
-}
+    }
+    .latest-post{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
     .main-title > h1{
         text-align: center;
     }
@@ -1309,6 +1315,7 @@ email{
         width: 100%;
         box-shadow: none;
     }
+    .older-posts p a img,
     .latest-post p a img{
         width: 100%;
     }
