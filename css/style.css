@@ -10,6 +10,9 @@ body{
     padding: 0;
     margin: 0;
 }
+a:visited{
+    color: rgb(125, 136, 230);
+}
 sub{
     font-size: medium;
 }
@@ -338,7 +341,7 @@ i{
 }
 .right-side ul li,
 .left-side ul li{
-    font-size: .5em;
+    font-size: .6em;
     list-style: none;
     margin: 1em 0 1em 0;
     border-bottom: 1px dashed lightgray;
@@ -362,7 +365,13 @@ i{
     width: 65%;
     border-radius: 55%;
 }
-.welcome > p,
+.welcome > p{
+    font-family: 'Roboto', serif;
+    padding: 1em 30px 1em 30px;
+    line-height: 1.5em;
+    text-align: left;
+    font-size: .8em;
+}
 .bar-choice > p,
 .latest-post > p,
 .older-posts > p,
@@ -370,8 +379,12 @@ i{
     font-family: 'Roboto', serif;
     padding: 1em 30px 1em 30px;
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     font-size: .8em;
+}
+.older-posts > h1,
+.latest-post > h1{
+    text-align: center;
 }
 .welcome > h2,
 .latest-post > h2,
@@ -564,22 +577,34 @@ i{
 
 /* footer  */
 footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax( 1em, auto);
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     background: #333;
     position: sticky;
-    height: 10vh;
+    /* height: 10vh; */
     border-top: 1em solid black;
 }
+#creator{
+    grid-column: 1/3;
+    justify-self: center;
+    /* width: 100%; */
+}
 footer h6{
+    justify-self: center;
     color: #aaa;
     font-size: .8em;
     /* text-align: center; */
 }
 footer h6 > a{
     text-decoration: none;
-    color: #aaa;
+    color: rgb(125, 136, 230);
+}
+footer h6 > a:hover{
+    cursor: pointer;
 }
 .contact-form{
     display: flex;
@@ -794,6 +819,7 @@ email{
     font-size: .6em;
 }
 .share-wrap{
+    grid-column: 2/3;
     /* display: flex; */
     /* justify-content: right; */
     position: relative;
@@ -812,18 +838,18 @@ email{
     justify-content: center;
     align-items: center;
     width: 100%;
+    
      
 }
 .share::before{
     content: "Like this? Tell your friends!";
-    font-size: .5em;
+    font-size: .7em;
     color: #000;
 
 }
 .share a img{
-    width: 1em;
-    margin: .5em;
-    
+    width: 1.5em;
+    margin-left: 1em;
 }
 .bar-menu:hover .bar-sub-menu{
     display: flex;
