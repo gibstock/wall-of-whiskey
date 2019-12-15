@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|PT+Serif&display=swap" rel="stylesheet">
     <script data-ad-client="ca-pub-9702978139216456" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="https://wallofwhiskey.com/whiskey">
@@ -94,7 +94,7 @@
                     <div class="grid-item-leftA item7"></div>
                     <div class="grid-item-leftA item8"></div>
                     <div class="grid-item-leftA item9"></div>
-                    <div class="grid-item-leftA item10 cock-menu"><a href=""><p>COCKTAILS</p></a></div>
+                    <div class="grid-item-leftA item10 cock-menu"><a href="https://wallofwhiskey.com/cocktails"><p>COCKTAILS</p></a></div>
                     <div class="grid-item-leftA item11"></div>
                     <div class="grid-item-leftA item12"></div>
                     <div class="grid-item-leftA item13"></div>
@@ -123,13 +123,13 @@
                     <div class="grid-item-rightA item9"></div>
                     <div class="grid-item-rightA item10"></div>
                     <div class="grid-item-rightA item11"></div>
-                    <div class="grid-item-rightA item12 tools-menu"><a href="">BAR TOOLS</a></div>
-                    <div class="grid-item-rightA item13 blog-menu"><a href="">BLOG</a></div>
+                    <div class="grid-item-rightA item12 tools-menu"><a href="https://wallofwhiskey.com/bar-tools">BAR TOOLS</a></div>
+                    <div class="grid-item-rightA item13 blog-menu"><a href="https://wallofwhiskey.com/articles.html#articles">BLOG</a></div>
                     <div class="grid-item-rightA item14"></div>
                     <div class="grid-item-rightA item15"></div>
-                    <div class="grid-item-rightA item16 tech-menu"><a href="">TECHNIQUES</a></div>
-                    <div class="grid-item-rightA item17 ing-menu"><a href="">INGREDIENTS</a></div>
-                    <div class="grid-item-rightA item18 subscribe-menu"><a href="">SUBSCRIBE</a></div>
+                    <div class="grid-item-rightA item16 tech-menu"><a onclick="working()">TECHNIQUES</a></div>
+                    <div class="grid-item-rightA item17 ing-menu"><a onclick="working()">INGREDIENTS</a></div>
+                    <div class="grid-item-rightA item18 subscribe-menu"><a href="https://wallofwhiskey.com/subscribe">SUBSCRIBE</a></div>
                     <div class="grid-item-rightA item19"></div>
                     <div class="grid-item-rightA item20"></div>
                     <div class="grid-item-rightA item21"></div>
@@ -171,7 +171,8 @@
             </div>
         </div>
     <div class="main-title">
-        <h1>Whiskey Reviews</h1>
+        <h1 id="articles">Articles, Thoughts, Tips and Musings</h1>
+        
     </div>
     <!-- section A  -->
     <section id="section-a">
@@ -184,34 +185,18 @@
             </div>
             <div class="main-area">
                 <div class="section-grid">
-                    <a href="wl-weller-12-year.html">
-                        <div class="card">
-                        <h3>WL Weller 12 Year</h3>
-                        <img src="img/wl-weller-12-year.jpg" alt="WL Weller 12 Year">
-                        <date>December 5, 2019</date>
-                        <author>By Wall of Whiskey</author>
-                        <h3>What is "wheated" bourbon?</h3>
-                    </div>
-                    </a>
-                    <a href="michters-toasted-barrel.html">
-                        <div class="card">
-                        <h3>Michters Toasted Barrel</h3>
-                        <img src="img/michters-toasted-barrel.jpg" alt="michters-toasted-barrel">
-                        <date>December 1, 2019</date>
-                        <author>By Wall of Whiskey</author>
-                        <h3>"MICH"ter's? "MICK"ter's? "MIKE"ter's?</h3>
-                    </div>
-                </a>
-                <a href="westland-sherry-wood.html">
-                    <div class="card">
-                        <h3>Westland Sherry Wood</h3>
-                        <img src="img/westland-sherry-wood.jpg" alt="westland-sherry-wood">
-                        <date>November 27, 2019</date>
-                        <author>By Wall Of Whiskey</author>
-                        <h3>Cowboys and Jackalopes</h3>
-                        </div>
-                    </a>
-                </div>     
+                    <p id="blog-desc">This will be a catalogue of tales from my years behind the stick and in the service industry in general. I'll try to keep it interesting!</p>
+                </div>   
+                <h2>December 2019</h2>
+                <article>
+                    
+                    <p><a href="https://wallofwhiskey.com/broken-glass-wet-customers">Broken Glass, Wet Customers and Houdini</a></p>
+                    
+                    <time datetime="2019-12-14 10:30:00 -0500 EST" pubdate>December 14, 2019</time>
+                    <p>As Bartenders we've all had days. Crazy days. Crazy days that have scarred us but are now a point of pride...</p>
+
+                    <img src="https://wallofwhiskey.com/img/shocked.png" alt="shocked face">
+                </article>  
             </div>
             <div class="right-side"><img src="img/king-cocktail.jpg" alt="cocktail"><p>Cocktails</p>
                 <ul>
@@ -223,8 +208,7 @@
     <!-- social media share  -->
     <div class="share-wrap">
             <div class="share">
-                    <a href="https://www.pinterest.com/pin/create/link/?url=https%3a%2f%2fwww.wallofwhiskey.com&media=https%3a%2f%2fraw.githubusercontent.com%2fgibstock%2fwall-of-whiskey%2fmaster%2fimg%2fleft-wall.jpg&description=Wall%20Of%20Whiskey%21%20Reviews%2cCocktails%2cTips%2e" target="_blank" rel="noopener"><img src="img/pinterest.png" alt="pinterest" title="Pin it!"></a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wallofwhiskey.com/whiskey.html" target="_blank" rel="noopener"><img src="img/facebook-icon.png" alt="share to facebook" title="Share to Facebook!"></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.wallofwhiskey.com/articles.html" target="_blank" rel="noopener"><img src="img/facebook-icon.png" alt="share to facebook" title="Share to Facebook!"></a>
             </div>
 
         </div>
@@ -238,8 +222,8 @@
             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
             
             var disqus_config = function () {
-            this.page.url = 'https://wallofwhiskey.com/whiskey.html';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = '/whiskey/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.url = 'https://wallofwhiskey.com/articles.html';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '/articles/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
             
             (function() { // DON'T EDIT BELOW THIS LINE

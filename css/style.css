@@ -1,3 +1,6 @@
+html{
+    font-size-adjust: 100%;
+}
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -9,6 +12,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-size: 112.5%;
 }
 a:visited{
     color: rgb(125, 136, 230);
@@ -475,13 +479,19 @@ i{
     margin: 1em 0 1em 0;
 }
 .main-title > h1{
-    font-size: 2.5em;
-    font-weight: bolder;
+    font-size: 1.75em;
+    font-weight: 700;
+    font-family: PT Serif, serif;
+    word-wrap: break-word;
+    line-height: 1.2;
+    margin: 0 0 1em;
+    padding: 1em 0 0;
 }
 .main-title p a{
     text-decoration: none;
     color: #333;
     font-size: .8em;
+    
 }
 /* section A  */
 
@@ -622,12 +632,21 @@ i{
 .latest-post p a img{
     width: 40vw;
 }
-        
+       
 .section-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 1vw;
+}
+.section-grid p{
+    font-family: PT Serif, serif;
+    font-weight: 300;
+    font-size: 80%;
+    word-wrap: break-word;
+    margin: 0 0 1.5625em;
+
+
 }
 .section-grid > a{
     text-decoration: none;
@@ -1119,6 +1138,36 @@ email{
 .quote{
     padding: 1em;
 }
+#blog-desc{
+    grid-column: 1/4;
+    text-align: center;
+}
+.main-area{
+    padding: 2em;
+}
+
+.main-area article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    /* gap: ; */
+}
+.main-area article > img{
+    max-width: 100%;
+    width: 45%;
+    justify-self: flex-start;
+}
+article > p{
+    color: darkgray;
+    font-size: .6em;
+    align-self: flex-start;
+    font-family: PT Serif, serif;
+
+}
+.main-area article time{
+    font-size: .6em;
+    color: gray;
+}
 
 
 @media screen and (max-width: 1024px){
@@ -1214,6 +1263,29 @@ email{
         grid-column: 7/13;
         width: 100%;
     }
+    #section-a{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 38em;
+        width: 88%;
+    } 
+    #section-a p,
+    #section-a p >a{
+        font-family: PT Serif, serif;
+        text-decoration: none;
+    }
+    #section-a p > a{
+        color:  rgb(125, 136, 230);
+        /* font-size: .7em */
+    }
+    #section-a time{
+        font-size: .6em;
+        color: gray;
+        justify-self: center;
+    }
+    /* #section-a p > a:hover{
+        cursor: pointer;
+    } */
     .section-grid{
         display: flex;
         flex-direction: column;
@@ -1387,7 +1459,9 @@ email{
     }
     .main-area{
         grid-row: 1/2;
+        /* padding: 1em; */
     }
+
     .left-side{
         grid-row: 2/3;
         border: none;
@@ -1621,6 +1695,34 @@ email{
         margin-bottom: 1em;
     }
     
+    
+}
+@media screen and (max-width: 425px){
+    .main-title h1{
+        font-size: 1em;
+    }
+    .main-area article{
+        display: flex;
+        flex-direction: column;
+    }
+    article > p{
+        align-self: flex-start;
+    }
+    .main-area article > img{
+        padding: .5em 0 .5em 0;
+        align-self: center;
+        width: 100%;
+    }
+    .section-grid > p{
+        font-size: .7em;
+    }
+    article{
+        /* border-top: 5px solid gray; */
+        border-bottom: 5px solid rgb(48, 41, 41);
+        margin-bottom: 1em; 
+        /* box-shadow: 0 .5px 5px 0px #000; */
+    }
+
     
 }
 @media screen and (max-width: 321px){
