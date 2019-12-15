@@ -1116,20 +1116,19 @@ email{
 
 
 @media screen and (max-width: 1024px){
-    /* .hero-bg{
+    .wall-leftA,
+    .wall-rightA,
+    .hero-bg{
+
         display: none;
-        background: url('../img/mobile-banner.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding:0;
-        grid-column: 6/8;
         
-    } */
+        
+    }
     .wall-left{
-        grid-column: 1/6;
+        grid-column: 1/7;
     }
     .wall-right{
-        grid-column: 8/13;
+        grid-column: 7/13;
     }
     /* .subscribe::after{
         content: "";
