@@ -5,6 +5,7 @@ const leftSide = document.querySelector('.left-side');
 const rightSide = document.querySelector('.right-side');
 const ul = leftSide.querySelector('ul');
 const ulRight = rightSide.querySelector('ul');
+const revMenu = document.querySelector('.rev-menu');
 // const nav = document.querySelector('.nav-bar');
 
 
@@ -40,8 +41,11 @@ function working(){
     // console.log(window.getComputedStyle(nav, ':before').getPropertyValue('visibility'));
     
 }
+function whiskey(){
+    location.assign("https://wallofwhiskey.com/whiskey");
+}
 // x =Math.floor((Math.random() * cocktailList.length));
 
-
+revMenu.addEventListener('click', whiskey);
 displayCocktails(cocktailList);
 displayWhiskey(whiskeyList);
