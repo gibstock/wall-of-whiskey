@@ -1536,7 +1536,7 @@ email{
     }
     .older-posts p a img,
     .latest-post p a img{
-        width: 100%;
+        max-width: 100%;
     }
     .latest-post h1{
         text-align: center;
