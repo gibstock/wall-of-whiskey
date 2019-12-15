@@ -1375,16 +1375,27 @@ email{
     
     .grid-container{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: auto;
+        /* grid-template-rows: auto; */
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .main-area{
+        grid-row: 1/2;
     }
     .left-side{
         grid-row: 2/3;
         border: none;
     }
     .right-side{
+        grid-row: 3/4;
         border: none;
     }
+    .share-wrap{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+        
     
     .main-area > p{
         padding: .5em;
