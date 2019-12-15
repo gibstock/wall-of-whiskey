@@ -365,6 +365,7 @@ i{
 }
 
 /* Wall Nav Items  */
+.about-menu,
 .cock-menu,
 .rev-menu,
 .blog-menu,
@@ -417,6 +418,7 @@ i{
     height: 20%;
     text-shadow: 1px .2px 0 #000, 0 .5px 0 #000;
 }
+.about-menu a,
 .cock-menu a{
     font-size: 1.6em;
     color: #000;
@@ -435,6 +437,7 @@ i{
     height: 28%;
     text-shadow: 1px .2px 0 #000, 0 .5px 0 #000;
 }
+.about-menu,
 .subscribe-menu,
 .cock-menu,
 .blog-menu,
@@ -448,6 +451,7 @@ i{
 .rev-menu:hover > p{
     visibility: visible;
 }
+.about-menu:hover a,
 .rev-menu:hover a,
 .subscribe-menu:hover a,
 .cock-menu:hover a,
