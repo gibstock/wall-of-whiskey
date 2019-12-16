@@ -497,6 +497,25 @@ i{
     font-size: .8em;
     
 }
+.bottle-desc{
+    display: grid;
+    grid-template-columns: 2fr 7fr 2fr;
+}
+.price{
+    grid-column: 2/3;
+}
+.distiller{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.abv{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.available{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
 /* section A  */
 
 .grid-container{
@@ -646,7 +665,7 @@ i{
 .section-grid p{
     font-family: PT Serif, serif;
     font-weight: 300;
-    font-size: 80%;
+    font-size: 1.5em;
     word-wrap: break-word;
     margin: 0 0 1.5625em;
 
@@ -665,7 +684,7 @@ i{
 }
 .card-content p{
     font-family: 'Roboto', serif;
-    padding: 1em 5em 1em 5em;
+    padding: 1em 1.5em 1em 1.5em;
     line-height: 1.7em;
     color: #222;
     
@@ -1277,10 +1296,11 @@ article > p{
     #section-a p >a{
         font-family: PT Serif, serif;
         text-decoration: none;
+        font-size: .7em;
     }
     #section-a p > a{
         color:  rgb(125, 136, 230);
-        /* font-size: .7em */
+        font-size: 1em
     }
     #section-a time{
         font-size: .6em;

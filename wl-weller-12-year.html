@@ -35,15 +35,16 @@
             <ul>
                 
                 <li><a href="https://wallofwhiskey.com/index.html">Home</a></li>
-                <li><a href="https://wallofwhiskey.com/whiskey.html">Whiskey</a></li>
-                <li><a href="https://wallofwhiskey.com/cocktails.html">Cocktails</a></li>
+                <li><a href="https://wallofwhiskey.com/whiskey.html#whiskey">Whiskey</a></li>
+                <li><a href="https://wallofwhiskey.com/cocktails.html#cocktails">Cocktails</a></li>
                 <li class="bar-menu"><a>Bar</a>
                     <ul class="bar-sub-menu">
-                        <li><a href="bar-tools.html">Tools</a></li>
+                        <li><a href="https://wallofwhiskey.com/bar-tools.html#bar-tools">Tools</a></li>
                         <li><a onclick="working()">Techniques</a></li>
                         <li><a onclick="working()">Ingredients</a></li>
                     </ul>
                 </li>
+                <li><a href="https://wallofwhiskey.com/articles.html#articles">Blog</a></li>
                 <li><a href="https://wallofwhiskey.com/subscribe.html">Subscribe</a></li>
             </ul>
 
@@ -56,16 +57,17 @@
             <a href="#">Menu</a>
             <ul class="mini-menu-sub">
                 <li><a href="https://wallofwhiskey.com/index.html">Home</a></li>
-                <li><a href="https://wallofwhiskey.com/whiskey.html">Whiskey</a></li>
-                <li><a href="https://wallofwhiskey.com/cocktails.html">Cocktails</a></li>
+                <li><a href="https://wallofwhiskey.com/whiskey.html#whiskey">Whiskey</a></li>
+                <li><a href="https://wallofwhiskey.com/cocktails.html#cocktails">Cocktails</a></li>
                 <li class="iphone-bar-menu"><a>Bar</a>
                     <ul class="iphone-sub-menu">
-                        <li><a href="https://wallofwhiskey.com/bar-tools.html">Tools</a></li>
+                        <li><a href="https://wallofwhiskey.com/bar-tools.html#bar-tools">Tools</a></li>
                         <li><a onclick="working()">Techniques</a></li>
                         <li><a onclick="working()">Ingredients</a></li>
                         
                     </ul>
                 </li>
+                <li><a href="https://wallofwhiskey.com/articles.html#articles">Blog</a></li>
                 <li><a href="https://wallofwhiskey.com/contact.html">Contact</a></li>
                 <li><a href="https://wallofwhiskey.com/subscribe.html">Subscribe</a></li>
             </ul>
@@ -189,6 +191,13 @@
         </div>
     <div class="main-title">
         <h1>WL Weller 12 Year</h1>
+        
+    </div>
+    <div class="bottle-desc">
+        <p class="price">Price: $30 - $200</p>
+        <p class="distiller">Distiller: Buffalo Trace</p>
+        <p class="abv">ABV: 45%</p>
+        <p class="available">Available for tasting at: <a href="https://lockedbarrel.com">Locked Barrel</a></p>
     </div>
     <!-- section A  -->
     <section id="section-a">
@@ -238,17 +247,22 @@
                           Will drink again!!<img src="img/thumbs-up.png" alt='thumbs up'>
 
                         </p>
-                        <div class="tags medium">
-                                <ul>
-                                    <li><b>Tags: </b></li>
-                                    <li><a href="#">WL Weller</a></li>
-                                    <li><a href="https://wallofwhiskey.com/whiskey">Whiskey</a></li>
-                                    <li><a href="https://wallofwhiskey.com/whiskey">Whiskey Review</a></li>
-                                    <li><a href="#">Aged Bourbon</a></li>
-                                    
-                                </ul>
-                            </div>
                     </div>
+                            <div class="contact-form">
+                                <p>Subscribe to see how many bottles I can put up on the Wall!</p>
+                                <form name="subscribe" method="POST" data-netlify="true">
+                                        <p>
+                                          <label>Your Name: <input type="text" name="name" required/></label>   
+                                        </p>
+                                        <p>
+                                          <label>Your Email: <input type="email" name="email" required/></label>
+                                        </p>
+                                        <p class="btn">
+                                          <button type="submit">Subscribe</button>
+                                        </p>
+                                      </form>
+            
+                            </div>
                     
                 </div>     
             </div>
