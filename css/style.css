@@ -888,7 +888,8 @@ textarea[name="message"]{
 }
 #cocktail-info-1,
 #cocktail-info-2{
-    grid-column: 1/3;
+    grid-column: 1/5;
+    padding: 0 1em 0 1em;
 }
 .card-wrap a{
     text-decoration: none;
@@ -975,7 +976,17 @@ textarea[name="message"]{
     display: grid;
     margin-top: 1.4em;
     gap: .5em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+}
+#first-ul{
+    grid-column: 2/3;
+}
+#second-ul h6,
+#first-ul h6{
+    text-align: left;
+}
+#second-ul{
+    grid-column: 3/4;
 }
 .recipe-grid ol li{
     font-family: 'Roboto', sans-serif;
@@ -989,19 +1000,22 @@ textarea[name="message"]{
     text-align: center;
 }
 .recipe-grid p{
+    grid-column: 2/4;
     font-size: .7em;
     align-self: center;
-    padding: 30px;
+    margin: 1em 0 1em 0;
 }
 .recipe-grid img{
-    box-shadow: -5px 0 10px 3px #000;
-    border-top: .2em solid #fff;
-    border-left: .2em solid #fff;
-    border-right: .2em solid #fff;
-    border-bottom: 2em solid #fff;
+    grid-column: 1/5;
+    justify-self: center;
+    /* grid-row: 1/2; */
+    max-width: 800px;
+    width: 100%;
+    
+    
 }
 .method{
-    grid-column: 1/3;
+    grid-column: 2/4;
     padding: 1.3em;
 }
 .method li{
@@ -1193,6 +1207,11 @@ article > p{
 }
 
 
+
+#old-f-temp-pic,
+#daq-temp-pic{
+    width: 30%;
+}
 @media screen and (max-width: 1024px){
     .wall-leftA,
     .wall-rightA,
@@ -1230,6 +1249,9 @@ article > p{
 
 } */
 @media screen and (max-width: 768px){
+    #cocktail-info-1{
+        padding: 0 .1em 0 .1em;
+    }
     .drop p img{
         max-width: 90%;
     }
@@ -1240,6 +1262,7 @@ article > p{
     .bar-tools-card{
         margin: 0 ;
     }
+    
     /* #shaker{
         margin-top: 8vh;
     } */
@@ -1619,11 +1642,16 @@ article > p{
     .recipe-grid{
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        padding: .1em;
     }
+
     .recipe-grid img{
         width: 100%;
         border-top: 1px dashed lightgray;
+    }
+    #daq-temp-pic,
+    #old-f-temp-pic{
+        align-self: center;
     }
     .recipe-grid p{
         border-top: 1px dashed lightgray;
