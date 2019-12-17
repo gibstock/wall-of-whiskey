@@ -1005,9 +1005,6 @@ textarea[name="message"]{
     align-self: center;
     margin: 1em 0 1em 0;
 }
-<<<<<<< HEAD
-
-=======
 .recipe-grid img{
     grid-column: 1/5;
     justify-self: center;
@@ -1017,7 +1014,6 @@ textarea[name="message"]{
     
     
 }
->>>>>>> 4bf1d52123e8e0fafa5466116d3aff71bfb6c327
 .method{
     grid-column: 2/4;
     padding: 1.3em;
