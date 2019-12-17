@@ -133,7 +133,7 @@ i{
     width: 100%;
 }
 .hero-bg{
-    background: url('../img/left-wall.jpg') no-repeat center;
+    /* background: url('../img/left-wall.jpg') no-repeat center; */
     /* height: 50vh;
     width: 50.7%; */
     grid-column: 4/10;
@@ -626,7 +626,7 @@ i{
 .welcome > date, author, comment,
 .latest-post > date,author, comment,
 .older-posts > date,author, comment,
-.main-area > date,author, comment{
+.main-area  date,author, comment{
     font-size: .7em;
 }
 
@@ -667,7 +667,7 @@ i{
 .section-grid p{
     font-family: PT Serif, serif;
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: .7em;
     word-wrap: break-word;
     margin: 0 0 1.5625em;
 
@@ -679,10 +679,10 @@ i{
 }
 .card-content{
     grid-column: 1/4;
-    font-size: .6em;
+    
 }
 .card-content h3{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .card-content p{
     font-family: 'Roboto', serif;
@@ -888,7 +888,8 @@ textarea[name="message"]{
 }
 #cocktail-info-1,
 #cocktail-info-2{
-    grid-column: 1/3;
+    grid-column: 1/5;
+    padding: 0 1em 0 1em;
 }
 .card-wrap a{
     text-decoration: none;
@@ -975,7 +976,17 @@ textarea[name="message"]{
     display: grid;
     margin-top: 1.4em;
     gap: .5em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+}
+#first-ul{
+    grid-column: 2/3;
+}
+#second-ul h6,
+#first-ul h6{
+    text-align: left;
+}
+#second-ul{
+    grid-column: 3/4;
 }
 .recipe-grid ol li{
     font-family: 'Roboto', sans-serif;
@@ -989,13 +1000,26 @@ textarea[name="message"]{
     text-align: center;
 }
 .recipe-grid p{
+    grid-column: 2/4;
     font-size: .7em;
     align-self: center;
-    padding: 30px;
+    margin: 1em 0 1em 0;
 }
+<<<<<<< HEAD
 
+=======
+.recipe-grid img{
+    grid-column: 1/5;
+    justify-self: center;
+    /* grid-row: 1/2; */
+    max-width: 800px;
+    width: 100%;
+    
+    
+}
+>>>>>>> 4bf1d52123e8e0fafa5466116d3aff71bfb6c327
 .method{
-    grid-column: 1/3;
+    grid-column: 2/4;
     padding: 1.3em;
 }
 .method li{
@@ -1100,15 +1124,13 @@ email{
 .privacy{
     display: flex;
     flex-direction: column;
-    padding: 0 30px 0 30px;
+    
 
 }
 .privacy p{
     font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
     font-size: .8em;
-
-    
 }
 #disqus-thread{
     padding: 0 1em 1em 1em;
@@ -1147,12 +1169,15 @@ email{
 .blog-post h6{
     font-size: .6em;
     margin-bottom: 1.5em;
-    padding-left: 1em;
+    padding-left: 5em;
 
 }
 .blog-post img{
-    max-width: 100%;
-    /* transform: translateX(8%); */
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    
 }
 .quote{
     padding: 1em;
@@ -1187,6 +1212,11 @@ article > p{
 }
 
 
+
+#old-f-temp-pic,
+#daq-temp-pic{
+    width: 30%;
+}
 @media screen and (max-width: 1024px){
     .wall-leftA,
     .wall-rightA,
@@ -1224,6 +1254,9 @@ article > p{
 
 } */
 @media screen and (max-width: 768px){
+    #cocktail-info-1{
+        padding: 0 .1em 0 .1em;
+    }
     .drop p img{
         max-width: 90%;
     }
@@ -1234,6 +1267,7 @@ article > p{
     .bar-tools-card{
         margin: 0 ;
     }
+    
     /* #shaker{
         margin-top: 8vh;
     } */
@@ -1353,7 +1387,9 @@ article > p{
         opacity: 0;
         
     }
-    
+    .blog-post h6{
+        padding: 0;
+    }
     .mobile-menu-button{
         content: "";
         width: 100px;
@@ -1545,12 +1581,13 @@ article > p{
         color: rgb(104, 103, 103);
        
     }
-    .card-content author{
-        font-size: 1em;
-    }
+    
     .card-content p{
-        font-size: 1.4em;
+        font-size: .7em;
         line-height: 1.3;
+    }
+    .card-content h3{
+        font-size: .9em;
     }
     .welcome img{
         box-shadow: none;
@@ -1583,9 +1620,7 @@ article > p{
     .card{
         margin-bottom: 1em;
     }
-    .card img{
-        width: 100vw;
-    }
+    
     .subscribe{
         position: sticky;
         top: 0;
@@ -1614,11 +1649,16 @@ article > p{
     .recipe-grid{
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        padding: .1em;
     }
+
     .recipe-grid img{
         width: 100%;
         border-top: 1px dashed lightgray;
+    }
+    #daq-temp-pic,
+    #old-f-temp-pic{
+        align-self: center;
     }
     .recipe-grid p{
         border-top: 1px dashed lightgray;
@@ -1738,11 +1778,11 @@ article > p{
         font-size: .7em;
     }
     .privacy{
-        width: 100vw;
+        
         display: flex;
         flex-direction: column;
         font-size: .6em;
-        padding: 0 15px 0 15px;
+        
         
     }
     .privacy p{
