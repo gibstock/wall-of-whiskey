@@ -838,6 +838,10 @@ footer h6 > a:hover{
     align-items: center;
     font-size: .5em;
     width: 100%;
+    grid-column: 1/4;
+}
+.contact-form > p{
+    font-size: 1.5em;
 }
 form{
     /* display: grid;
@@ -848,6 +852,9 @@ form{
     justify-content: center;
     align-items: center;
     width: 50vw;
+}
+.contact-form form p > label{
+    font-size: 1.5em;
 }
 input[name="name"],
 input[name="email"],
