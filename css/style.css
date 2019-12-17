@@ -1005,12 +1005,13 @@ textarea[name="message"]{
     align-self: center;
     margin: 1em 0 1em 0;
 }
-.recipe-grid img{
+.recipe-grid > img{
     grid-column: 1/5;
     justify-self: center;
     /* grid-row: 1/2; */
     max-width: 800px;
-    width: 100%;
+    width: 30%;
+    align-self: center;
     
     
 }
@@ -1649,8 +1650,7 @@ article > p{
     }
 
     .recipe-grid img{
-        align-self: center;
-        width: 30%;
+        width: 100%;
         border-top: 1px dashed lightgray;
     }
     #daq-temp-pic,
