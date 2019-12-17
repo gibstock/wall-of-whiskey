@@ -1649,7 +1649,8 @@ article > p{
     }
 
     .recipe-grid img{
-        width: 100%;
+        align-self: center;
+        width: 30%;
         border-top: 1px dashed lightgray;
     }
     #daq-temp-pic,
