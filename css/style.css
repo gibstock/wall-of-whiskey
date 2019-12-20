@@ -1897,6 +1897,7 @@ article > p{
     footer{
         flex-direction: column;
         justify-content: space-around;
+        background: url("/img/mobile-banner-square.png");
     }
     footer h6{
         font-size: .7em;
