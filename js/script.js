@@ -6,6 +6,8 @@ const rightSide = document.querySelector('.right-side');
 const ul = leftSide.querySelector('ul');
 const ulRight = rightSide.querySelector('ul');
 const revMenu = document.querySelector('.rev-menu');
+const wallBtn = document.querySelector('.show-wall');
+const heroWrapper = document.querySelector('.hero-wrapper');
 // const nav = document.querySelector('.nav-bar');
 
 
@@ -34,6 +36,14 @@ function displayCocktails(arr){
     }
 }
 
+function showWall(){
+    if(heroWrapper.style.display === "" || heroWrapper.style.display === "none"){
+        heroWrapper.style.display = "flex";
+        
+    }else if(heroWrapper.style.display === "flex"){
+        heroWrapper.style.display = "none";
+    }
+}
 function working(){
     alert( "Sometimes in the bar world, if we run out of a product or it isn't in yet, it's 86'd. Well this is 86'd! Check back soon. In the meantime, please make another selection. Cheers.")
     // window.getComputedStyle(nav, ':before').setProperty('visibility', 'visible');
@@ -46,6 +56,7 @@ function whiskey(){
 }
 // x =Math.floor((Math.random() * cocktailList.length));
 
+wallBtn.addEventListener('click', showWall);
 revMenu.addEventListener('click', whiskey);
 displayCocktails(cocktailList);
 displayWhiskey(whiskeyList);
