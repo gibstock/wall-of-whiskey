@@ -1542,7 +1542,7 @@ article > p{
         position: absolute;
         z-index: 100;
         top: 7vh;
-        left: 15px;
+        left: 0;
         
     }
     .mobile-menu-button:before{
