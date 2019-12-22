@@ -1456,10 +1456,14 @@ article > p{
         width: 100%;
     }
     #section-a{
-        
-        max-width: 38em;
+        gap: 0;
+        width: 100%;
+        /* max-width: 38em; */
         /* width: 88%; */
     } 
+    #section-b{
+        padding: 0 10px 0 10px;
+    }
     #section-a p,
     #section-a p >a{
         font-family: PT Serif, serif;
@@ -1497,7 +1501,7 @@ article > p{
         content:"WallOfWhiskey.com";
         font-size: .9em;
         position: absolute;
-        right: 5px;
+        right: 10px;
     
 
     }
@@ -1538,7 +1542,7 @@ article > p{
         position: absolute;
         z-index: 100;
         top: 7vh;
-        left: 0;
+        left: 15px;
         
     }
     .mobile-menu-button:before{
@@ -1915,6 +1919,8 @@ article > p{
         flex-direction: column;
         justify-content: space-around;
         background: url("/img/mobile-banner-square.png");
+        background-size: contain;
+        background-position: center;
     }
     footer h6{
         font-size: .7em;
