@@ -1935,7 +1935,7 @@ article > p{
         transform: translateX(0%);
     }
     .blog-post{
-        padding: 1em; 
+        padding: 0; 
     }
     .quote{
         font-size: .6em;
