@@ -6,8 +6,9 @@ const rightSide = document.querySelector('.right-side');
 const ul = leftSide.querySelector('ul');
 const ulRight = rightSide.querySelector('ul');
 const revMenu = document.querySelector('.rev-menu');
-const wallBtn = document.querySelector('.show-wall');
+const wallBtn = document.querySelector('#my-wall');
 const heroWrapper = document.querySelector('.hero-wrapper');
+const closeBtn = document.querySelector('#close-me');
 // const nav = document.querySelector('.nav-bar');
 
 
@@ -35,27 +36,27 @@ function displayCocktails(arr){
         ulRight.appendChild(li);
     }
 }
-
+function closeMe(){
+    heroWrapper.style.display = "none";
+    closeBtn.style.display = "none";
+}
 function showWall(){
-    if(heroWrapper.style.display === "" || heroWrapper.style.display === "none"){
-        heroWrapper.style.display = "flex";
-        
-    }else if(heroWrapper.style.display === "flex"){
-        heroWrapper.style.display = "none";
-    }
+    // console.log("hello");
+    heroWrapper.style.display = "flex";
+    closeBtn.style.display = "flex";
 }
 function working(){
     alert( "Sometimes in the bar world, if we run out of a product or it isn't in yet, it's 86'd. Well this is 86'd! Check back soon. In the meantime, please make another selection. Cheers.")
     // window.getComputedStyle(nav, ':before').setProperty('visibility', 'visible');
     // window.getComputedStyle(nav, ':after').setProperty('visibility', 'visible');
     // console.log(window.getComputedStyle(nav, ':before').getPropertyValue('visibility'));
-    
-}
+ }
 function whiskey(){
     location.assign("https://wallofwhiskey.com/whiskey");
 }
 // x =Math.floor((Math.random() * cocktailList.length));
 
+closeBtn.addEventListener('click', closeMe);
 wallBtn.addEventListener('click', showWall);
 revMenu.addEventListener('click', whiskey);
 displayCocktails(cocktailList);
