@@ -9,7 +9,6 @@ const revMenu = document.querySelector('.rev-menu');
 const wallBtn = document.querySelector('#my-wall');
 const heroWrapper = document.querySelector('.hero-wrapper');
 const closeBtn = document.querySelector('#close-me');
-// const nav = document.querySelector('.nav-bar');
 
 
 
@@ -54,10 +53,9 @@ function working(){
 function whiskey(){
     location.assign("https://wallofwhiskey.com/whiskey");
 }
-// x =Math.floor((Math.random() * cocktailList.length));
 
+displayCocktails(cocktailList);
+displayWhiskey(whiskeyList);
 closeBtn.addEventListener('click', closeMe);
 wallBtn.addEventListener('click', showWall);
 revMenu.addEventListener('click', whiskey);
-displayCocktails(cocktailList);
-displayWhiskey(whiskeyList);
