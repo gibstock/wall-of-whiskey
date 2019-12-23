@@ -1512,7 +1512,7 @@ article > p{
         position: absolute;
         flex-direction: column;
         justify-content: space-between;
-        top: 10vh;
+        top: 4vh;
         left: 0;
         height: 50vh;
         width: 100vw;
