@@ -1465,8 +1465,6 @@ article > p{
     #section-a p,
     #section-a p >a{
         font-family: PT Serif, serif;
-        text-decoration: none;
-        
     }
     .try{
         margin-bottom: 1em;
@@ -1498,16 +1496,17 @@ article > p{
     .nav-bar::before{
         content:"WallOfWhiskey.com";
         font-size: .9em;
-        position: absolute;
+        position: initial;
         right: 10px;
     
 
     }
     .nav-bar{
         
-        height: 17vh;
+        /* height: 17vh; */
         border-bottom: none;
         background: #fff;
+        position: relative;
     }
     .nav-bar > .mobile-menu-button > ul{
         position: absolute;
@@ -1847,10 +1846,10 @@ article > p{
         width: 80%;
     }
     .left-side > img{
-        width: 30%;
+        width: 100%;
     }
     .right-side > img{
-        width: 30%;
+        width: 100%;
     }
     .grid-item-left,
     .grid-item-right{
@@ -2004,19 +2003,27 @@ article > p{
         width: 100%;
     }
     .mini-menu{
-        display: inherit;
-        /* background: green; */
-        /* height: 50vh; */
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.781);
+        box-shadow: inset 0 0 5px 0 black;
+        height: 7vh;
         width: 100%;
         position: sticky;
-        top: 0;
+        top: 9px;
         z-index: 101;
     }
-    
-    .mini-menu ul li{
-        /* background: blue; */
+    .mini-menu > ul{
         width: 100%;
+    }
+    .mini-menu > ul > li{
+        /* background: blue; */
+        /* width: 100%; */
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     }
     
@@ -2030,6 +2037,7 @@ article > p{
         display: none;
         background: #fff;
         opacity: .2;
+        width: 100%;
     }
     .mini-menu-sub > li{
         list-style: none;;
