@@ -1391,6 +1391,7 @@ article > p{
     .main-title{
         background: url('/img/mobile-banner-square.png') center;
         background-size: contain;
+        height: inherit;
     }
     #cocktail-info-1{
         padding: 0 .1em 0 .1em;
@@ -1741,6 +1742,10 @@ article > p{
     .main-title > h1{
         text-align: center;
     }
+    .main-title > h2{
+        background: #000;
+        color: #fff;
+    }
     .card-content > p{
         padding: 1em .5em;
     }
@@ -1918,6 +1923,8 @@ article > p{
         background: url("/img/mobile-banner-square.png");
         background-size: contain;
         background-position: center;
+        height: inherit;
+        border-top: none;
     }
     footer h6{
         font-size: .7em;
