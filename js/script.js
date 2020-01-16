@@ -1,6 +1,6 @@
 const cocktailList = ['daiquiri','hot-toddy',
 'old-fashioned','monte-carlo','manhattan','brown-derby', 'sazerac','basil-gimlet'];
-const whiskeyList = ['Westland-Sherry-Wood', 'Michters-Toasted-Barrel','Wl-Weller-12-Year','Glenfiddich-12-year', 'Heaven-hill-bottled-in-bond'];
+const whiskeyList = ['Westland-Sherry-Wood', 'Michters-Toasted-Barrel','Wl-Weller-12-Year','Glenfiddich-21-year', 'Heaven-hill-bottled-in-bond'];
 const leftSide = document.querySelector('.left-side');
 const rightSide = document.querySelector('.right-side');
 const ul = leftSide.querySelector('ul');
